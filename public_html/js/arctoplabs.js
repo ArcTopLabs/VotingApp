@@ -7,7 +7,7 @@
 
 var appName = "demo";
 var url = 'https://api.masterdatanode.com/' + appName + '/vote/';
-var access_token = 'Zs0nTQB-ujOSV0KmEoPhBx2E6-Ab_GKO';  //'######access_token###########'
+var access_token = '######access_token###########';  //'######access_token###########'
 var content_type = 'application/json';
 var html5sticky = {};
 html5sticky.voteResult = function () {

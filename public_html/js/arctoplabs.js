@@ -156,11 +156,11 @@ html5sticky.vote = function (name, color) {
             var result = $.parseJSON(JSON.stringify(data));
             console.info(JSON.stringify(result));
 //            $("#test_div").html(JSON.stringify(result.description));
-            html5sticky.showMessage('#9BED87', 'black', 'Sticky Note Saved :)');
+            html5sticky.showMessage('#9BED87', 'black', 'Vote added successfully to ' + name + '.  <small>Click Vote Again to re-vote.</small>');
         },
         error: function (xhr, thrownError) {
-//            alert("readyState: " + xhr.readyState + "\nstatus: " + xhr.status + "\nresponseText: " + xhr.responseText);
-            html5sticky.showMessage('#9BED87', 'black', 'Vote added successfully to ' + name + '.  <small>Click Vote Again to re-vote.</small>');
+            alert("readyState: " + xhr.readyState + "\nstatus: " + xhr.status + "\nresponseText: " + xhr.responseText);
+//            html5sticky.showMessage('#9BED87', 'black', 'Vote added successfully to ' + name + '.  <small>Click Vote Again to re-vote.</small>');
 //            alert(thrownError);
         }
     });
